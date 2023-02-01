@@ -43,6 +43,7 @@ function App() {
       .catch(err => err)
       .finally(()=>
       setIsLoading(false))
+      
     }
       
       
@@ -59,7 +60,7 @@ function App() {
       <div className='card__container'>
       {
       isLoading ?
-      <h2>Loading.....</h2>
+      <span class="loader"></span>
       :
       <WeatherCard weather={weather} temperature={temperature} we={we}/>
 
