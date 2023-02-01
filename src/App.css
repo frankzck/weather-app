@@ -1,0 +1,148 @@
+.App{
+    width: 100%;
+    min-height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+ 
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(201, 202, 203, 0.5);
+    padding: 2.5em 1.5em;
+    width: 100%;
+    max-width: 400px;
+
+    
+}
+
+.card__title{
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.card__icon{
+    font-size: 20px;
+    float: left;
+    text-align: center;
+  
+}
+
+.card__img{
+    transition: transform 100ms ease;
+}
+
+.card__img:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* BACKGROUNDS -------*/
+
+.card__Clear{
+    background-image: url("/clear.jpg");;
+}
+
+.card__Clouds{
+    background-image: url("/clouds.jpg");;
+}
+
+.card__Mist{
+    background-image: url("/clouds.mist");;
+}
+
+.card__Rain{
+    background-image: url("/rain.jpg");;
+}
+
+.card__Snow{
+    background-image: url("/snow.jpg");;
+}
+
+.card__Thunderstorm{
+    background-image: url("/thunderstorm.jpg");;
+}
+
+
+
+
+/*-------*/
+
+.card__subtitle{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.card__body{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    gap: 0.5em
+}
+
+.card__info-title{
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.card__list{
+    display: grid;
+    gap: 0.5em;
+    
+}
+
+.card__item{
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 2fr);
+    font-weight: 600;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card__info-label{
+    font-weight: 500;
+    
+
+}
+
+.card__footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card__temperature{
+    margin-bottom: 0.7em;
+}
+
+.card__btn{
+    font-size: 0.9rem;
+    padding: 0.7em 1.5em;
+    border-radius: 0.3em;
+    box-shadow: 0.2em 0.2em 0.7em rgba(33, 33, 33, 0.667);
+    filter: brightness(0.95);
+    transition: filter 100ms ease, transform 100ms ease;
+    cursor: pointer;
+    
+}
+
+.card__btn:hover{
+    filter:brightness(1);
+    transform: scale(1.05)
+}
+
